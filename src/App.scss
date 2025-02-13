@@ -1,0 +1,19 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Đảm bảo chiếm toàn bộ chiều cao */
+}
+
+footer {
+  margin-top: auto; /* Đẩy footer xuống cuối */
+}

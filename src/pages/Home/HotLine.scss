@@ -1,0 +1,119 @@
+.hotline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: url("../../assets/hotline.jpg") no-repeat center;
+  background-size: cover;
+  color: #2c2c2c;
+  flex-wrap: wrap;
+}
+
+.hotline-content {
+  width: 50%;
+  text-align: left;
+}
+
+.hotline-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.hotline-content .subtext {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.hotline-content .hotline {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.highlightt {
+  color: red;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.banner-image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+  .hotline {
+      flex-direction: column;
+      padding: 30px;
+      text-align: center;
+  }
+
+  .hotline-content {
+      width: 100%;
+      text-align: center;
+  }
+
+  .hotline-content h1 {
+      font-size: 2rem;
+  }
+
+  .hotline-content .hotline {
+      font-size: 1rem;
+  }
+
+  .highlightt {
+      font-size: 40px;
+  }
+
+  .banner-image {
+      width: 100%;
+      justify-content: center;
+      margin-top: 20px;
+  }
+
+  .banner-image img {
+      max-width: 80%;
+  }
+}
+
+/* Mobile (dưới 768px) */
+@media (max-width: 767px) {
+  .hotline {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .hotline-content {
+      width: 100%;
+      text-align: center;
+  }
+
+  .hotline-content h1 {
+      font-size: 1.8rem;
+  }
+
+  .hotline-content .hotline {
+      font-size: 1rem;
+  }
+
+  .highlightt {
+      font-size: 35px;
+  }
+
+  .banner-image {
+      width: 100%;
+      justify-content: center;
+      margin-top: 15px;
+  }
+
+  .banner-image img {
+      max-width: 90%;
+  }
+}

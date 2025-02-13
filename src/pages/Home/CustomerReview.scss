@@ -1,0 +1,54 @@
+.customer-review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  
+  .review-container {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+    .customer-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      color: white;
+    }
+    
+    p {
+      font-size: 1rem;
+      color: white;
+      line-height: 1.5;
+    }
+  }
+
+  /* Responsive cho mobile */
+  @media (max-width: 768px) {
+    .review-container {
+      padding: 15px;
+    }
+
+    .customer-avatar {
+      width: 70px;
+      height: 70px;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}

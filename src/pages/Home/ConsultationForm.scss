@@ -1,0 +1,52 @@
+.review-form-container {
+    display: flex;
+    background: url('https://caphe.vnwordpress.net/wp-content/uploads/2017/10/banner-coffee-02.jpg') no-repeat center;
+    background-size: cover;
+    padding: 50px;
+    .customer-review, .consultation-form {
+      width: 50%;
+      padding: 20px;
+    }
+  }
+.consultation-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      input, select, textarea {
+        margin: 10px 0;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+      .dob {
+        display: flex;
+        justify-content: space-between;
+        select {
+          width: 32%;
+        }
+      }
+      button {
+        background-color: #d4af37;
+        color: black;
+        padding: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+        &:hover {
+          background-color: #b9972e;
+        }
+      }
+    }
+    .note {
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 10px;
+    }
+}
