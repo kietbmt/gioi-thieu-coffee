@@ -29,13 +29,14 @@ const Header = () => {
       <div className="main-header">
         <img src={Logo} alt="Khách hàng" className="logo" />
         <div className="text-content">
-          <h3>CHUYÊN CUNG CẤP SỈ</h3>
-          <h2>CAFE RANG XAY NGUYÊN CHẤT 100%</h2>
-          <h3>SẢNG KHOÁI TINH THẦN CÙNG ABC COFFEE</h3>
+          <h2>CHUYÊN CUNG CẤP SỈ</h2>
+          <h3>CAFE RANG XAY NGUYÊN CHẤT 100%</h3>
+          <h4>SẢNG KHOÁI TINH THẦN CÙNG ABC COFFEE</h4>
         </div>
         <div className="contact">
-          <i className="fas fa-phone-alt"></i>
-          <span className="phone-number">SDT: 123456789</span>
+        <i class="fa-solid fa-phone-volume"></i>
+          <span className="phone-number"> 123456789</span>
+          <i class="fa-solid fa-basket-shopping"></i>
         </div>
       </div>
       <nav className={`nav-bar ${isScrolled ? "sticky" : ""} ${menuOpen ? "active" : ""}`}>

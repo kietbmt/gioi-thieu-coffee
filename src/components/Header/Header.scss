@@ -1,6 +1,8 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
 .header {
-  background-color: #222;
-  color: white;
+  background-color: f5f5f5;
+  color: #777777;
   font-family: Arial, sans-serif;
 }
 
@@ -8,31 +10,41 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 20px;
-  background-color: black;
+  padding: 5px 50px;
+  background-color: #f5f5f5;
   font-size: 14px;
 }
 
 .social-icons a {
-  color: white;
+  color: #777777;
   margin: 0 5px;
+  font-size: 20px;
 }
 
 .main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 5px 100px;
   flex-wrap: wrap;
 }
 
 .logo {
-  height: 100px;
+  height: 150px;
   padding: 10px;
 }
-
+h2{  
+  color: #3498db;
+}
+h3{
+  padding: 0 35px;
+  color: #5A280E;
+}
+h4{
+  padding: 0 55px;
+  color: #e67e22;
+}
 .text-content {
-  text-align: center;
   flex: 1;
   min-width: 250px;
 }
@@ -43,7 +55,17 @@
   padding: 10px;
   min-width: 150px;
 }
-
+.fa-phone-volume{
+  font-size: 20px;
+}
+.phone-number{
+  color: red;
+  font-size: 30px;
+}
+.fa-basket-shopping{
+  font-size: 28px;
+  padding: 0 15px;
+}
 .nav-bar {
   background-color: #5a2d0c;
   padding: 10px 0;

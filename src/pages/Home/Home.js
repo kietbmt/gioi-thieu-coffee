@@ -5,6 +5,7 @@ import ProductList from "./ProductList";
 import CustomerReview from "./CustomerReview";
 import ConsultationForm from "./ConsultationForm";
 import HotLine from "./HotLine";
+import Alert from "./Alert";
 const Home = () => {
   return (
     <div className="home">
@@ -28,6 +29,7 @@ const Home = () => {
         <ConsultationForm />
       </div>
       <HotLine />
+      <Alert />
     </div>
   );
 };

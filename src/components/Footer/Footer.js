@@ -1,40 +1,29 @@
 import React from "react";
 import "./Footer.scss";
-import Logo from "../../assets/logo.jpg";
+
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        {/* Logo và thông tin công ty */}
         <div className="footer-section">
-         <img src={Logo} alt="Khách hàng" className="logo" no-repeat center />
-          <p>CÔNG TY TNHH SX TM DV CÀ PHÊ TRUNG HÒA.</p>
-          <p>Địa Chỉ : 82A Nguyễn Trãi, Quảng Phú, H. Cư M'gar, ĐắkLắk, Việt Nam.</p>
-          <p>Hotline: 123456789</p>
-          <p>Tel: 123456789</p>
-          <p>email : abc@gmail.com</p>
-          <p>Website:www.abc.com</p>
+          <h4>CÔNG TY CÀ PHÊ ABC</h4>
+          <p>Địa chỉ: TP BMT</p>
+          <p>Điện thoại: 0999000000</p>
+          <p>Website: ABC.com</p>
+          <p>Fanpage: fb.com</p>
         </div>
-        
-        {/* Liên kết nhanh */}
         <div className="footer-section">
-          <h4>LIÊN KẾT NHANH</h4>
+          <h4>BÀI VIẾT MỚI</h4>
           <ul>
-            <li><a href="#">TRUYỀN THÔNG</a></li>
-            <li><a href="#">CHÍNH SÁCH BẢO MẬT</a></li>
-            <li><a href="#">THÔNG TIN LIÊN HỆ</a></li>
+            <li>Ăn hạt dinh dưỡng có tốt ko</li>
+            <li>Tác dụng kinh người của những loại hạt</li>
+            <li>Quả óc chó có thực sự có ích</li>
+            <li>Quả óc chó – THỰC PHẨM CỰC TỐT CHO BÀ BẦU VÀ TRẺ NHỎ</li>
+            <li>Chào tất cả mọi người!</li>
           </ul>
         </div>
-        
-        {/* Mạng xã hội */}
         <div className="footer-section">
-          <h4>SOCIAL MEDIA</h4>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Youtube</a></li>
-            <li><a href="#">Tiktok</a></li>
-          </ul>
+          <h4>FANPAGE FACEBOOK</h4>
         </div>
       </div>
     </footer>
