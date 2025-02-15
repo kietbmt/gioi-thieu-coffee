@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="home">
       {/* Banner */}
-      <section className="banner">
+      <section className="banner" id="intro">
         <div className="banner-content">
           <h1>CÀ PHÊ ABC – CÀ PHÊ NGUYÊN CHẤT 100%</h1>
           <p>Sử dụng công thức gia truyền cho ra loại cà phê với hương vị tuyệt hảo</p>
@@ -23,14 +23,18 @@ const Home = () => {
         </div>
       </section>
       <WhyChooseUs />
-      <ProductList />
-      <div className="review-form-container">
+      <section id="products">
+        <ProductList />
+      </section>
+      <div className="review-form-container" id="review">
         <CustomerReview />
         <ConsultationForm />
       </div>
-      <HotLine />
+      <section id="contact">
+        <HotLine />
+      </section>
       <Alert />
     </div>
   );
 };
- export default Home;
+export default Home;

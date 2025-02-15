@@ -1,7 +1,7 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 .header {
-  background-color: f5f5f5;
+  background-color: #f5f5f5;
   color: #777777;
   font-family: Arial, sans-serif;
 }
@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 50px;
-  background-color: #f5f5f5;
+  background-color: #e8e3e3;
   font-size: 14px;
 }
 
@@ -33,17 +33,19 @@
   height: 150px;
   padding: 10px;
 }
-h2{  
+
+h2 {  
   color: #3498db;
 }
-h3{
+h3 {
   padding: 0 35px;
   color: #5A280E;
 }
-h4{
+h4 {
   padding: 0 55px;
   color: #e67e22;
 }
+
 .text-content {
   flex: 1;
   min-width: 250px;
@@ -55,21 +57,27 @@ h4{
   padding: 10px;
   min-width: 150px;
 }
-.fa-phone-volume{
+
+.fa-phone-volume {
   font-size: 20px;
 }
-.phone-number{
+
+.phone-number {
   color: red;
   font-size: 30px;
 }
-.fa-basket-shopping{
+
+.fa-basket-shopping {
   font-size: 28px;
   padding: 0 15px;
 }
+
 .nav-bar {
   background-color: #5a2d0c;
   padding: 10px 0;
   transition: all 0.3s ease;
+  font-weight: bold;
+  font-size: 12.8px;
 }
 
 .nav-bar ul {
@@ -78,6 +86,10 @@ h4{
   list-style: none;
   padding: 0;
   flex-wrap: wrap;
+}
+
+.nav-bar ul.show-menu {
+  display: flex;
 }
 
 .nav-bar ul li {
@@ -89,9 +101,12 @@ h4{
   text-decoration: none;
   transition: color 0.3s ease;
 }
-.menu-toggle{
-  background-color: #5a2d0c
+
+.menu-toggle {
+  background-color: #5a2d0c;
+  display: none;
 }
+
 .nav-bar ul li a:hover {
   color: #ffcc00;
 }
@@ -106,34 +121,22 @@ h4{
   z-index: 1000;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .top-bar {
     flex-direction: column;
     text-align: center;
     font-size: 12px;
   }
-
   .main-header {
     flex-direction: column;
     text-align: center;
   }
-
   .logo {
     height: 80px;
   }
-
   .contact {
     text-align: center;
   }
-
-  .nav-bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-
   .nav-bar ul {
     display: none;
     flex-direction: column;
@@ -144,15 +147,12 @@ h4{
     top: 100%;
     left: 0;
   }
-
-  .nav-bar.active ul {
+  .nav-bar ul.show-menu {
     display: flex;
   }
-
   .nav-bar ul li {
     margin: 10px 0;
   }
-
   .menu-toggle {
     display: block;
     border: none;
